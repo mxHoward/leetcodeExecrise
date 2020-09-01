@@ -1,16 +1,12 @@
 #include <iostream>
-#include "812\solution812.h"
+#include "486\solution486.h"
 
 using namespace std;
 
 int main()
 {
-	vector<int> a = {1, 2};
-	vector<int> b = {-1, 2};
-	vector<int> c = {3, 4};
-	vector<int> d = {0, 1};
-	vector<vector<int>> tri = {a, b, c, d};
-	solution812 s;
-	cout << s.largest_triangle_area(tri) << endl;
+	vector<int> a = {1, 2, 532, 52, 124, 255, 231, 521, 4, 2, 5};
+	solution486 s;
+	cout << s.predict_the_winner(a) << endl;
 	return 0;
 }
