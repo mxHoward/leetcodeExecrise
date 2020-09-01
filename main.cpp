@@ -1,12 +1,16 @@
 #include <iostream>
-#include "891\solution891.h"
+#include "812\solution812.h"
 
 using namespace std;
 
 int main()
 {
-	vector<int> a = {1, 2, 3, 4, 5, 6, 1, 23, 5, 7, 39, 12, 54};
-	solution891 s;
-	cout<<s.sum_subseq_widths(a)<<endl;
+	vector<int> a = {1, 2};
+	vector<int> b = {-1, 2};
+	vector<int> c = {3, 4};
+	vector<int> d = {0, 1};
+	vector<vector<int>> tri = {a, b, c, d};
+	solution812 s;
+	cout << s.largest_triangle_area(tri) << endl;
 	return 0;
 }

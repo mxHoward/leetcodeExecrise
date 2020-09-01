@@ -8,9 +8,11 @@ aux_source_directory(. DIR_SRCS)
 add_subdirectory(utility)
 add_subdirectory(160)
 add_subdirectory(891)
+add_subdirectory(812)
 
 add_executable(test main.cpp)
 
 target_link_libraries(test UTIL)
 target_link_libraries(test _160)
 target_link_libraries(test _891)
+target_link_libraries(test _812)
