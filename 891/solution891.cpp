@@ -11,7 +11,7 @@
 #include <algorithm>
 
 typedef long long ll;
-const ll MOD = 1e9 +7;
+const ll MOD = 1e9 + 7;
 
 int solution891::sum_subseq_widths(vector<int> &A)
 {
@@ -22,7 +22,8 @@ int solution891::sum_subseq_widths(vector<int> &A)
 	for (int i = 1; i <= n; ++i)
 		two[i] = (two[i - 1] << 1) % MOD;
 	ll ans = 0;
-	for (int i = 0; i < n; ++i) {
+	for (int i = 0; i < n; ++i)
+	{
 		int left = i;
 		int right = n - i - 1;
 		ans = (ans + (two[left] - two[right]) * A[i]) % MOD;

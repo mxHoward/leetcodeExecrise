@@ -17,8 +17,7 @@ using namespace std;
 class solution891
 {
 public:
-	int sum_subseq_widths(vector<int>& A);
+	int sum_subseq_widths(vector<int> &A);
 };
-
 
 #endif //TEST_SOLUTION891_H
