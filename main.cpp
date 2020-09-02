@@ -1,12 +1,16 @@
 #include <iostream>
-#include "486\solution486.h"
+#include "1604\solution1604.h"
 
 using namespace std;
 
 int main()
 {
-	vector<int> a = {1, 2, 532, 52, 124, 255, 231, 521, 4, 2, 5};
-	solution486 s;
-	cout << s.predict_the_winner(a) << endl;
+	string s[] = {"1.3-2","0", "12 ","+23.e+2","+321.23e-23", "a"};
+	solution1604 so;
+	for (int i = 0; i < 6; ++i)
+	{
+		cout << so.is_number(s[i]) <<endl;
+	}
+
 	return 0;
 }
