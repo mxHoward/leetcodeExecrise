@@ -1,16 +1,32 @@
 #include <iostream>
-#include "1604/solution1604.h"
+#include "206/solution206.h"
 
 using namespace std;
 
 int main()
 {
-	string s[] = {"1.3-2","0", "12 ","+23.e+2","+321.23e-23", "a"};
-	solution1604 so;
-	for (int i = 0; i < 6; ++i)
+	solution206 s;
+	list_node *node[10];
+	for (int i = 0; i < 10; ++i)
+		node[i] = new list_node(i << 1, nullptr);
+	for (int i = 0; i < 9; ++i)
+		node[i]->set_next(node[i + 1]);
+	list_node *curr;
+	curr = node[0];
+	while(curr != nullptr)
 	{
-		cout << so.is_number(s[i]) <<endl;
+		cout << curr->get_val() << "->";
+		curr = curr->next();
 	}
+	cout<<endl;
+	curr = s.revers_list2(node[0]);
+	while(curr != nullptr)
+	{
+		cout << curr->get_val() << "->";
+		curr = curr->next();
+	}
+	cout<<endl;
+
 
 	return 0;
 }
