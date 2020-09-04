@@ -8,7 +8,7 @@
 // Description:
 
 #include "solution812.h"
-#include <cmath>
+#include <algorithm>
 
 double solution812::largest_triangle_area(vector<vector<int>>& points) {
 	double res = 0;

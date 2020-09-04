@@ -8,7 +8,6 @@
 // Description:
 
 #include "solution160.h"
-#include <iostream>
 
 using namespace std;
 

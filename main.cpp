@@ -1,5 +1,5 @@
 #include <iostream>
-#include "1604\solution1604.h"
+#include "1604/solution1604.h"
 
 using namespace std;
 

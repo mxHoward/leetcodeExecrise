@@ -10,7 +10,7 @@
 #ifndef TEST_SOLUTION160_H
 #define TEST_SOLUTION160_H
 
-#include "..\utility\list_node.h"
+#include "../utility/list_node.h"
 
 class solution160
 {
