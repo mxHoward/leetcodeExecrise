@@ -10,10 +10,10 @@
 
 #include "solution83.h"
 
-list_node* solution83::delete_duplicates(list_node *head)
+list_node *solution83::delete_duplicates(list_node *head)
 {
-	list_node* curr = head;
-	while (curr!= nullptr && curr->next()  != nullptr)
+	list_node *curr = head;
+	while (curr != nullptr && curr->next() != nullptr)
 	{
 		if (curr->next()->get_val() == curr->get_val())
 			curr->set_next(curr->next()->next());

@@ -20,7 +20,5 @@ int main()
 		ans = ans->next();
 	}
 	cout << endl;
-
-
 	return 0;
 }

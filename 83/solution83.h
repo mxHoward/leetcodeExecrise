@@ -19,5 +19,4 @@ public:
 	list_node *delete_duplicates(list_node *head);
 };
 
-
 #endif //TEST_SOLUTION83_H
