@@ -1,23 +1,16 @@
 #include <iostream>
-#include "19/solution19.h"
+#include "347/solution347.h"
 
 using namespace std;
 
 int main()
 {
-	solution19 s1;
-	list_node *A, *B, *C, *D, *E, *F;
-	F = new list_node(6, nullptr);
-	E = new list_node(5, F);
-	D = new list_node(4, E);
-	C = new list_node(3, D);
-	B = new list_node(2, C);
-	A = new list_node(1, B);
-	list_node * ans = s1.remove_nth_from_end2(A, 3);
-	while (ans != nullptr)
+	solution347 s1;
+	vector<int> nums = {1, 4, 4, 4, 1, 2, 2, 3, 3, 3, 9, 5, 6};
+	vector<int> res = s1.top_k_frequent2(nums, 2);
+	for (int i = 0; i < res.size(); ++i)
 	{
-		cout << ans->get_val() << " ";
-		ans = ans->next();
+		cout << res[i] << " ";
 	}
 	cout << endl;
 	return 0;

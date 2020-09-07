@@ -19,6 +19,7 @@ add_subdirectory(107)
 add_subdirectory(21)
 add_subdirectory(83)
 add_subdirectory(19)
+add_subdirectory(347)
 
 add_executable(test main.cpp)
 
@@ -36,3 +37,4 @@ target_link_libraries(test _107)
 target_link_libraries(test _21)
 target_link_libraries(test _83)
 target_link_libraries(test _19)
+target_link_libraries(test _347)
